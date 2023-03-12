@@ -1,0 +1,66 @@
+/* 全体のCSS */
+.chatArea {
+  width: 80%;
+  height: 700px;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: 2px solid #aaa;
+  border-radius: 15px;
+  background: #fff8e8;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.left,
+.right {
+  margin: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.faceicon img {
+  width: 80px;
+  height: auto;
+}
+.right .faceicon {
+  margin-left: 25px;
+}
+.left .faceicon {
+  margin-right: 25px;
+}
+.right .faceicon {
+  order: 2 !important;
+}
+.says {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #99dddd;
+  box-sizing: border-box;
+  margin: 0 !important;
+  line-height: 1.5;
+}
+.says p {
+  margin: 8px 0 0 !important;
+}
+.says p:first-child {
+  margin-top: 0 !important;
+}
+.says:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+}
+.left .says:after {
+  left: -26px;
+  border-right: 22px solid #99dddd;
+}
+.right .says:after {
+  right: -26px;
+  border-left: 22px solid #99dddd;
+}
